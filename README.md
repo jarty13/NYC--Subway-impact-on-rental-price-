@@ -3,7 +3,7 @@ Measuring the impact of proximity to a subway line has on rental prices in Manha
 
 Used a combination of location and price data, to build model to predict whether apartments in Manhattan and Brooklyn will be above or below their neighborhood median rental price.
 
-
+Evaluted predictions using different machine learning classifiers
 
 # Data Processing
 * Created a dataset using the following sources:
