@@ -1,23 +1,20 @@
 # Project Motivation
-Measuring the impact of proximity to a subway line has on rental prices in Manhattan and Brooklyn. Our goal was to see if the opening and closing of subway line would impact the price of apartment rentals in the area.
+Measuring the impact of proximity to a subway line has on rental prices in Manhattan and Brooklyn. Our goal was to see if the opening and closing of the subway line would impact the price of apartment rentals in the area.
 
-Used a combination of location and price data, to build model to predict whether apartments in Manhattan and Brooklyn will be above or below their neighborhood median rental price.
+We used a combination of location and price data, to build a model to predict whether apartments in Manhattan and Brooklyn will be above or below their neighborhood median rental price.
 
-Evaluted predictions using different machine learning classifiers
+We Evaluated predictions using different machine learning classifiers
+
 
 # Data Processing
-* Created a dataset using the following sources:
-- Subway entrances, stations and lines: NYC open data
-- Median rental prices: Zillow
-- Apartment sales: NYC Department of Finance
-- Boundary analysis: Google API
-
-Used the rental prices information from Zillow in Manhattan and Brooklyn to convert past sale prices of NYC apartments into rental prices.
-
-Each apartment and subway entrance/station had latitude and longitude information. Using the Google MAP API we were able to map the distance between each subway entrance to the apartments to measure the impact of proximity and the change in rent price.
-
-Added in feature importance of how many subways entrances were within .5 miles, .4 miles, .3 miles, .2 miles and .1 miles to each individual apartment to see impact of proximity.
-
+Created a dataset using the following sources:
+* Location data for station entrances and line access from MTA's API
+* Apartment sales from the NYC Department of Finance
+* Median neighborhood rental prices and sale-to-rent ratios from Zillow
+* Apartment coordinates from GoogleMaps API
+* Used the rental prices information from Zillow in Manhattan and Brooklyn to convert past sale prices of NYC apartments into rental prices.
+* Each apartment and subway entrance/station had latitude and longitude information. Using the GooglMap APIs we were able to map the distance between each subway entrance to the apartments to measure the impact of proximity and the change in rent price.
+* Added in feature importance of how many subways entrances were within .5 miles, .4 miles, .3 miles, .2 miles and .1 miles to each individual apartment to see the impact of proximity.
 
 # Data Exploration of Maping with GeoPandas
 
